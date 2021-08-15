@@ -1,0 +1,64 @@
+.header {
+  background: rgb(0,36,8);
+  background: linear-gradient(142deg, rgba(0,36,8,1) 33%, rgba(9,121,16,1) 76%, rgba(0,191,34,1) 85%, rgba(0,144,38,1) 91%);
+  border-radius: 0 0 0 10rem;
+  padding: 2rem 3rem 7rem 2rem;
+
+  margin-left: 7%;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    background: url("../../../logo.svg") no-repeat center;
+    width: 10rem;
+    height: 5rem;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 4rem;
+  }
+
+  &__title {
+    width: 40%;
+    padding-left: 8rem;
+
+    border-right: 1px solid #727272;
+
+    div {
+      padding-top: 2rem;
+      color: #b0ff75;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__text {
+    width: 50%;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding-right: 10rem;
+    word-spacing: 0.2rem;
+  }
+}
+
+.menu {
+  color: #FFFFFF;
+  width: 50%;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline;
+    padding: 0.5rem 1rem;
+
+    font-size: 1.8rem;
+  }
+}
