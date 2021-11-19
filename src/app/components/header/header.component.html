@@ -2,7 +2,7 @@
 
   <div class="header__top">
     <div class="header__logo"></div>
-    <nav class="menu">
+    <nav class="header__menu">
       <ul class="menu__list">
         <li class="menu__item" *ngFor="let item of menuPoints">
           {{item}}
@@ -11,14 +11,34 @@
     </nav>
   </div>
 
-  <div class="header__bottom">
-    <h1 class="title header__title">
-      Modern&nbsp; Dentistry
-      <div>Центр сучасної стоматології</div>
-    </h1>
-    <div class="header__text">
-      Modern Dentistry - це сучасна стоматологія для всієї родини. У нас ви отримаєте стоматологічні послуги за всіма напрямками: діагностика, лікування, відновлення, протезування.
-      У нашому центрі працюють лікарі з багаторічним досвідом, а сучасне обладнання та високоякісні матеріали дозволяють їм виконувати роботу на найвищому рівні. Саме тому ми гарантуємо високу якість послуг кожному нашому пацієнту.
+  <div class="header__content">
+    <div class="header__info">
+      <div class="header__time">
+        <span class="material-icons icon">
+          schedule
+        </span>
+        <div>
+          <div>Понеділок - П'ятниця &nbsp; 09:00 - 19:00</div>
+          <div>Cубота &nbsp; 09:00 - 15:00</div>
+          <div>Неділя - Вихідний</div>
+        </div>
+      </div>
+      <div  class="header__contacts">
+        <span class="material-icons-round icon">
+          phone
+        </span>
+        <div class="phones">
+          <a class="phones__link" href="tel:+380966039766">+380 96 603 97 66</a>
+          <a class="phones__link" href="tel:+380994126433">+380 99 412 64 33</a>
+        </div>
+      </div>
+      <div class="header__location">
+        <span class="material-icons icon">
+          location_on
+        </span>
+        <div>Пр. Михайла Лушпи 5, корпус 28</div>
+      </div>
+      <app-button class="button"></app-button>
     </div>
   </div>
 

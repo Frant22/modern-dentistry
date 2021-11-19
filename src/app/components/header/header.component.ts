@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  menuPoints = ['Послуги', 'Акції', 'Лікарі' ,'Ціни', 'Графік', 'Адресса']
+  menuPoints = ['Про нас','Послуги', 'Лікарі' ,'Ціни', 'Акції']
 
   constructor() { }
 
