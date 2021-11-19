@@ -1,0 +1,120 @@
+@import "src/styles/vars";
+
+@mixin button($bcolor,
+$url,
+$x1,
+$y1,
+$bor,
+$col) {
+  background: $bcolor;
+  -webkit-mask: url($url);
+  mask: url($url);
+  -webkit-mask-size: $x1 $y1;
+  mask-size: $x1 $y1;
+  border: $bor;
+  color: $col;
+}
+
+.button-container {
+  position: relative;
+  width: 15vw;
+  height: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  font-weight: 300;
+  transition: $time;
+  letter-spacing: 1px;
+  border-radius: 1rem;
+
+  button {
+    width: 101%;
+    height: 100%;
+    font-weight: 600;
+    font-size: .8rem;
+    letter-spacing: 1px;
+
+
+    @include button($dark-green, "https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png",
+      7100%,
+      100%,
+      none,
+      #fff);
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(70) forwards;
+    animation: ani2 0.7s steps(70) forwards;
+
+    &:hover {
+      -webkit-animation: ani 0.7s steps(70) forwards;
+      animation: ani 0.7s steps(70) forwards;
+    }
+  }
+}
+
+.mas {
+  position: absolute;
+  background-color: #fff;
+  text-align: center;
+  width: 101%;
+  height: 100%;
+  font-size: .8rem;
+  padding-top: .8rem;
+  overflow: hidden;
+  font-weight: bold;
+
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+a{
+  color:#00ff95;
+}
+
+
+
